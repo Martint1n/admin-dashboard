@@ -7,7 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    height: 100vh;
+    min-height: 100%;
     gap: 15vh;
     background-color: aqua;
 }
@@ -29,6 +29,7 @@ body{
 }
 .sectionOne{
     display: flex;
+    margin-left: 10px;
     border: 1px solid red;
     height: 5vh;
     align-items: center;
@@ -41,15 +42,84 @@ body{
     height: 40px;
     border-radius: 50%;
 }
+.sectionOne > .icon{
+    margin-left: auto;
+}
 
 .sectionTwo{
     display: flex;
+    margin-left: 10px;
     border: 1px solid red;
     height: 10vh;
+    align-items: center;
+}
+
+.btn{
+    color: white;
+    background-color: aqua;
+    border-radius: 20%;
+}
+.sectionTwo button:nth-child(3){
+    margin-left: auto;
 }
 
 .sectionThree{
     display: grid;
+    padding: 10px;
     border: 1px solid green;
     height: 100%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1,50px) repeat(6, 1fr);
+    gap: 10px;
+    background-color:beige;
+}
+.titleGrid{
+    grid-column: span 6;
+    height: 50px;
+}
+.titleGridSide{
+    grid-column: span 2;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    grid-column: span 3;
+    grid-row: span 2;
+    border: 1px solid orangered;
+    border-radius: 10px;
+    border-left: 10px solid orange;
+    background-color: white;
+}
+.projectBody{
+    padding: 10px;
+}
+.projectIcons{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    align-self: flex-end;
+    margin-top: auto;
+}
+.projectSide, .trending{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;
+    grid-row: span 3;
+    border: 1px solid blueviolet;
+    background-color: white;
+}
+.projectSide::before, .projectSide::after{
+    align-self: stretch;
+    content: "";
+    border: 1px solid #c00;
+}
+
+.projectSideText1{
+    order: -1;
+}
+.projectSideText3{
+    order: 1;
 }
