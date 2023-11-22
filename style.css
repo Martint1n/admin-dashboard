@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    margin: 0 auto;
+}
+
+.sideBar{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 100vh;
+    gap: 15vh;
+    background-color: aqua;
+}
+.part{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}
+.icon{
+    float:left;
+    height: 20px;
+    width: 20px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sectionOne{
+    display: flex;
+    border: 1px solid red;
+    height: 5vh;
+    align-items: center;
+}
+.searchBar{
+    width: 50vw;
+    border-radius: 10px;
+}
+.sylvan{
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sectionTwo{
+    display: flex;
+    border: 1px solid red;
+    height: 10vh;
+}
+
+.sectionThree{
+    display: grid;
+    border: 1px solid green;
+    height: 100%;
+}
